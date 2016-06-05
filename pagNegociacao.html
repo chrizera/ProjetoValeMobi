@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mercadorias</title>
+	<script type = "text/javascript" src = "validacao.js"></script>
+	<link rel=stylesheet type = "text/css" href = estilo.css>
+</head>
+<body>
+	<div id="titulo">
+	  	<br>
+	  	<h1>NEGOCIAÇÃO DE <span id="merc">MERCADORIAS</span></h1>
+	  	<br>
+ 	</div> 
+	<div>
+	 	<form id = "formulario" method = "post" action = "pag2.html" onSubmit = "return validar()">
+		   	<div>
+		   		<br>
+		    	<label for = "codMerc">Código da mercadoria:</label>
+		    	<input type = "text" id = "codMerc" name = "codMerc" class = "texto">
+		    	<label for = "tipoMerc">Tipo da mercadoria:</label>
+		    	<input type = "text" id = "tipoMerc" name = "tipoMerc" class = "texto">
+		   	</div>
+		   	<div>
+		    	<label for = "nomeMerc">Nome da mercadoria:</label>
+		    	<input type = "text" id = "nomeMerc" name = "nomeMerc">
+		   	</div>
+		   	<div> 
+		    	<label for = "quant">Quantidade:</label>
+		    	<input type = "text" id = "quant" class = "texto" name = "quant">
+		    	<label for = "preco">Preço: </label>
+		    	<span>R$</span><input type = "text" id = "preco" class = "texto" name = "preco">
+		   	</div>
+		   	<div>
+		    	<span>Tipo de negócio:</span>
+		    	<select name = "tipoNegocio" id = "tipoNegocio" class = "texto" name = "tipoNegocio">
+		     	<option value = "" id = "selecione">Selecione</option>
+		     	<option value = "compra" id = "compra">Compra</option>
+		     	<option value = "venda" id = "venda">Venda</option>
+		    	</select>
+		   	</div>
+		   	<div>
+		   		<input type = "submit" id = "enviar" value = "Enviar" class = "botao">
+		    	<input type = "reset" id = "limpar" value = "Limpar" class = "botao">
+		   	</div>
+	 	</form>
+	</div>
+</body>
+</html>
